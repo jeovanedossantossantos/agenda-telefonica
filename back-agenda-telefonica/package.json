@@ -1,0 +1,22 @@
+{
+  "name": "back-agenda-telefonica",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jeovane dos Santos Santos",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "@types/multer": "^1.4.7",
+    "axios": "^0.26.0",
+    "busboy": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.2"
+  }
+}
