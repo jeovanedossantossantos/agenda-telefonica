@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container } from './style';
 import api from '../../service/api'
-import e from 'express';
+import { useNavigate } from "react-router-dom";
 
 interface DadosProps{
   nome: string;
@@ -12,6 +12,7 @@ interface DadosProps{
 }
 export const Form: React.FC = () => {
   const [date, setDate] = useState<DadosProps>({} as DadosProps)
+  const push = useNavigate()
   // const [file, setFile] = useState();
   // const [fileName, setFileName] = useState("");
 
@@ -43,7 +44,7 @@ export const Form: React.FC = () => {
     // console.log(date)
 
    api.post('/cadastra_contato', date).then(res => {
-  
+    push("/")
      
    }).catch(err => { 
      

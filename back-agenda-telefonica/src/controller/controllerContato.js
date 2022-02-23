@@ -7,20 +7,33 @@ const controllerContato = {
         
         const {nome, email, telefone} = req.body;
      
-
-        res.send()
+       try{
         const newContato= await Contato.create({
 
             nome, email, telefone
         });
 
         return res.status(201).json(newContato)
+       }catch(e){
+        return res.status(500).json({"message":"Não foi possivel cadastra"})
+       }
     },
     async listartTodos(req, res) {
         const listar = await Contato.findAll()
 
         return res.status(200).json(listar)
     },
+    async buscarUm(req, res) {
+        const {id}=req.params
+        console.log("ok")
+        const buscar = await Contato.findOne({ 
+            where: {
+                id
+            }
+        })
+        return res.status(200).json(buscar)
+    }
+    ,
     async atualizar(req, res) {
 
         const {id}=req.params
