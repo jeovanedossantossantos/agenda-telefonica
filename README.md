@@ -14,7 +14,7 @@
 <p>Era criar uma sistema de que fosse possivel...
 <ol>
 <li>[x] Cadastra<br />
-<p>Obs:. A idei inicial era fazer o upload da imgem e armazenar ela no cloudinary e armazena apenas o link da imgem que estaria neste servidor. Porém, não foi possivel devido um problema na requisição com a api do cloudinary que não devolvia o link da imgem no servidor, como não houve tempo para resolução deste probelma, a questão da imgem está sendo fita pela colocação do link no campo
+<p>Obs:. A ideia inicial era fazer o upload da imagem e armazenar ela no cloudinary e armazena apenas o link da imagem que estaria neste servidor. Porém, não foi possível devido um problema na requisição com a api do cloudinary que não devolvia o link da imagem no servidor, como não houve tempo para resolução deste problema, a questão da imagem está sendo fita pela colocação do link no campo
 </p>
 <img width="600px" src="./imgRed/1.png">
 </li>
