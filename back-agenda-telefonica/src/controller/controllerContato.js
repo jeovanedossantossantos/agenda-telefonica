@@ -5,12 +5,12 @@ const controllerContato = {
       
         console.log("Cadastro")
         
-        const {nome, email, telefone} = req.body;
+        const {nome, email, telefone, link_foto} = req.body;
      
        try{
         const newContato= await Contato.create({
 
-            nome, email, telefone
+            nome, email, telefone, link_foto
         });
 
         return res.status(201).json(newContato)
@@ -37,12 +37,12 @@ const controllerContato = {
     async atualizar(req, res) {
 
         const {id}=req.params
-        const {nome, email, telefone} = req.body;
+        const {nome, email, telefone, link_foto} = req.body;
 
         if(!id) return res.status(400).json({"message": "Ida não valido"})
 
         const contatoAtualizado = await Contato.update({
-            nome, email, telefone
+            nome, email, telefone, link_foto
         },
         {
             where: {

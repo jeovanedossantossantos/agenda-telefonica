@@ -17,6 +17,9 @@ const Contato = db.db.define('Contato', {
     email: {
         type: DataTypes.STRING
     },
+    link_foto: {
+        type: DataTypes.STRING
+    },
     createdAt: {
         type: DataTypes.DATE,
     },

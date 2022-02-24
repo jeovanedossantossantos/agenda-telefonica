@@ -4,9 +4,19 @@ import styled from "styled-components"
 export const Container = styled.div`
 
 background: #134480;
+height:100vh;
+
+
 
 `
-
+export const Title = styled.div`
+    text-align:center;
+    font-size:32px;
+    color:#fff;
+    font-size:32;
+   
+    
+`
 export const Button = styled.button`
 
     cursor: pointer;
@@ -16,11 +26,11 @@ export const Button = styled.button`
 
     font-family: "Gotham-Medium";
 
-    color: rgb(100, 102, 107);
+    color:#fff;
 
     :hover{
         transition: 1s;
-        color:#fff;
+        color:grey;
 
     }
 `
