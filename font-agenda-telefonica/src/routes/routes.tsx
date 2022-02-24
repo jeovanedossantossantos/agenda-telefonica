@@ -1,7 +1,7 @@
 import React from "react";
 import { Router, Route, Link, Routes, Navigate, BrowserRouter } from "react-router-dom";
 import { ListaTelefonica } from "../views/ListaTelefonica";
-import {Adicionar} from "../views/Adicionar"
+import Adicionar from "../views/Adicionar"
 import { Editar } from "../views/Editar";
 
 

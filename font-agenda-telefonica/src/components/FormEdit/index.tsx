@@ -55,6 +55,7 @@ export const FormEdit: React.FC = () => {
             setNome(res.data.nome)
             setTelefone(res.data.telefone)
             setEmail(res.data.email)
+            setLink(res.data.link_foto)
         }).catch(err => {
             console.log(err);
         })
