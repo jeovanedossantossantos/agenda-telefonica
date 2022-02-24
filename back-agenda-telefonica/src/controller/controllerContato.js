@@ -25,7 +25,7 @@ const controllerContato = {
     },
     async buscarUm(req, res) {
         const {id}=req.params
-        console.log("ok")
+        // console.log("ok")
         const buscar = await Contato.findOne({ 
             where: {
                 id
