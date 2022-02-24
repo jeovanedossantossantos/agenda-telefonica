@@ -1,4 +1,4 @@
-# Qula foi o Desafio?
+# Qual foi o Desafio?
 
 <ol>
         <li>[x] -Faça uma agenda telefônica (em formato de lista); </li>
